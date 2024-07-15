@@ -44,8 +44,8 @@ const MouseFollowAnimation = () => {
             gsap.to(newImage, {
               opacity: 0,
               y: '+=100', // Move image 20 pixels down while fading out
-              duration: 10, // Duration of the fade-out
-              delay: 1, // Wait 1 second before starting the fade-out
+              duration: 1, // Duration of the fade-out
+              delay: 0.1, // Wait 1 second before starting the fade-out
               ease: 'power2.out',
               onComplete: () => {
                 if (containerRef.current) {
