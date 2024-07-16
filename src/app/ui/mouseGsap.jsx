@@ -119,7 +119,7 @@ const MouseFollowAnimation = () => {
         containerRef.current.appendChild(newImage);
 
         gsap.to(newImage, {
-          duration: 0.5,
+          duration: 0.6,
           x: dx > 0 ? `+=${Math.abs(dx)}` : `-=${Math.abs(dx)}`, // Move image in the direction of mouse movement horizontally
           y: dy > 0 ? `+=${Math.abs(dy)}` : `-=${Math.abs(dy)}`, // Move image in the direction of mouse movement vertically
           ease: 'power2.out',
